@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <div class="cont">
+            <div class="row">
+                <div class="col-md-1" style="background: lightblue; height: 100px; padding: 0px;">
+                </div>
+                <div class="col-md-3" style="background: lightblue; height: 100px;"></div>
+                <div class="col-md-8" style="background: lightblue; color:black; height: 100px;">
+                   <h1> My Banking APP</h1>
+                </div>      
+                <%-include ('nav')-%>
+      </head>
+    <body>
+        
+        <div style="border: solid 2px;"><center ><h1>Withdraw</h1></center></div>
+        <form>
+            <div class="cont">
+                <div class="row">
+                  <div class="col-md-3"></div>
+                  <div class="col-md-6">
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col">
+                            Enter Account Number
+                            <input type="text" class="form-control" name="ac">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            Enter Pin Number
+                            <input type="text" class="form-control" name="p">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            Enter Amount to Withdraw
+                            <input type="text" class="form-control" name="amt">
+                        </div>
+                    </div>
+               
+                    <br><br>
+                        <button type="submit" value="submit"  name="submit" class="btn  btn-success">Withdraw</button><br>
+                        </form>
+
+                      <br>  <h3><%=msg%></h3>
+                  </div>
+        </form>
+    </body>
+
+        </html>
